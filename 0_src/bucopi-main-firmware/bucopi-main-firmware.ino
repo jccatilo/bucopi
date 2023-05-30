@@ -5,7 +5,7 @@
 #include <ESP8266HTTPClient.h>
 #include "clip_arts.h"
 #include "my_configurations.h"
-#include <WiFiManager.h> // https://github.com/tzapu/WiFiManager
+#include <WiFiManager.h> // https://github.com/tzapu/WiFiManager   current installed: wifimanger by tablatronix version 2.0.15-rc.1
 #define TRIGGER_PIN 0 //this is the pin for entering AP mode and reconfuging the device
 #include <Wire.h>
 #include <Adafruit_GFX.h>
