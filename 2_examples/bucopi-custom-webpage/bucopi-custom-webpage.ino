@@ -37,8 +37,8 @@ void setup() {
   if(WiFi.localIP()){
   server.on("/", handle_root);
   server.onNotFound (handle_not_found);
-  server.on("/led_on",handle_on);
-  server.on("/led_off",handle_off);
+//  server.on("/led_on",handle_on);
+//  server.on("/led_off",handle_off);
   server.begin();
   Serial.println("Server Started!");
   }
@@ -227,6 +227,7 @@ void handle_root(){
   server.send(200, "text/html", html_code);
     delay(100);
   }
+
 void handle_not_found() {
     Serial.println("404 Not Found ");
     server.send(404, "text/plain", "Not Found. You requested \"" + server.uri() + "\"");
